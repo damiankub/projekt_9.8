@@ -1,0 +1,563 @@
+/* FONTS IMPORT */
+@import url('https://fonts.googleapis.com/css?family=Gudea')
+@import url('https://fonts.googleapis.com/css?family=Coming+Soon')
+*
+	box-sizing: border-box
+	font-size: 15px
+	padding: 0
+	margin: 0
+/* FONT COLORS */
+
+$font-color-w: #fff
+$font-color-green: #16a085
+$Gudea: 'Gudea', sans-serif
+
+/* EXTEND */
+
+@mixin iphonceColorBlue ($color: #109676)
+	border-color: $color
+	background-color: #109676
+
+@mixin fontfortext
+	font-family: 'Coming Soon', cursive
+.btn-get
+	background-color: #16a085
+	border-radius: 3px
+	border: 1px solid #16a085
+	padding: 10px 20px 10px 20px
+	color: $font-color-w
+	font-family: $Gudea
+	font-weight: bold
+	&:hover
+		background-color: #007e5a
+
+/* HEADER */
+
+header
+	background-image: url('https://images.pexels.com/photos/316902/pexels-photo-316902.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb')
+	color: $font-color-w
+	background-size: cover
+	background-position: 0px 
+	.container
+		.row
+			.nav
+				justify-content: center
+				ul
+					margin: 40px 0 0 0
+					text-decoration: none
+					list-style: none
+					li
+						display: inline-block
+						padding: 15px 40px 15px 40px
+						text-decoration: none
+						color: $font-color-w
+						border: 1px solid transparent
+						&:hover
+							border: 1px solid #fff
+						a
+							&:hover
+								color: #636363
+								margin: -1px
+						
+							
+
+			.yor-life
+				font-family: $Gudea
+				margin: 0 auto
+				padding: 200px 0 200px 0
+				h2
+					font-weight: bold
+			.social-icons
+				justify-content: center
+				a
+					color: #fff
+					font-size: 30px
+				i
+					padding: 20px 20px 20px 20px
+					margin: 20px
+					border: 1px solid transparent
+					&:hover
+						color: #636363
+						border: 1px solid
+						border-radius: 50%
+
+/* SIMPLE PHOTO */
+
+.simple-photo
+	.container
+		background-image: url(img/Hand.png)
+		background-repeat: no-repeat
+		background-position: right top 50px
+		padding: 100px 0 100px 0
+		.simple-photo-text
+			width: 50% 
+			h2
+				color: $font-color-green
+			p
+				padding: 30px 0 30px 0
+				@include fontfortext
+
+/* DESIGN */
+
+.design
+	margin-top: 30px
+	padding: 20px 0px 30px 0px
+	overflow: hidden
+	max-height: 500px
+	.container
+		height: 700px
+		.iphone-button-left	
+			margin: 70px 0px 0px -8px /* LEFT SIDE BUTTONS */ 
+			width: 5px
+			height: 25px
+			border: 2px solid
+			position: absolute
+			border-radius: 3px
+			@include iphonceColorBlue
+		.iphone-button-left-second
+			content: ""
+			margin: 120px 0px 0px -8px
+			width: 5px
+			height: 35px
+			border: 2px solid
+			position: absolute
+			border-radius: 3px
+			@include iphonceColorBlue
+		.iphone-button-left-third
+			content: ""
+			margin: 180px 0px 0px -8px
+			width: 5px
+			height: 35px
+			border: 2px solid
+			position: absolute
+			border-radius: 3px
+			@include iphonceColorBlue
+		.iphone-camera
+			border-radius: 50%
+			margin: 20px 0px 0px 139px 
+			width: 12px
+			height: 12px
+			border: 3px solid
+			position: absolute
+			background-color: #16a085
+		.iphone-speaker
+			content: ""
+			border-radius: 10px
+			margin: 40px 0px 0px 115px
+			width: 60px
+			height: 15px
+			border: 3px solid
+			position: absolute
+			border-color: #0e0e0e
+			background-color: #141414
+			box-shadow: inset 0px -4px 5px 0px #202022
+		.iphone-button-top
+			content: ""
+			margin: -8px 0px 0px 190px
+			width: 45px
+			height: 5px
+			border: 2px solid
+			border-radius: 3px
+			position: absolute
+			@include iphonceColorBlue
+		/* Iphone TOUCH */
+		.iphone-touch
+			border-radius: 50%
+			margin: 535px 0px 0px 125px
+			width: 50px
+			height: 50px
+			border: 1px solid
+			position: absolute
+			background: linear-gradient(to bottom ,rgba(20,20,20,1) 30%, #1d1d1d, rgba(29,29,29,1) )
+		.iphone-touch-inside
+			content: ""
+			margin: 548px 0px 0px 138px
+			width: 25px
+			height: 25px
+			border: 2px solid
+			position: absolute
+			border-radius: 5px
+			border-color: #3e3e3e
+		.iphone
+			margin-left: 10px
+			width: 300px
+			height: 600px
+			border: 5px solid 
+			border-color: #16a085
+			border-radius: 45px
+			background-color: #141414
+			transition: border-color 700ms ease-in-out
+			box-shadow: -1px 1px 20px 0px #141414
+		.iphone-screen
+			margin: 80px 0px 0px 5px 
+			width: 280px
+			height: 450px
+			border: 5px solid 
+			border-color: #1e1e1e
+			border-radius: initial
+			background-image: url("https://images.pexels.com/photos/417074/pexels-photo-417074.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb")
+			background-size: cover
+			transition: background-image 0.2s ease-in-out
+			-moz-transition: background-image 0.2s ease-in-out
+			.row
+				.iphone-screen-icons-left
+					font-size: 10px
+					margin: 0 0 0 25px
+				.iphone-screen-icons-right
+					font-size: 10px
+					text-align: right
+					margin: 0px 0px 0px 200px
+		.design-title
+			padding: 0px 0 0 0px
+			h2
+				padding: 0px 0 50px 0px
+				color: $font-color-green
+			p
+				padding: 0px 0 20px 0px
+				@include fontfortext
+			.color-numer-iphone
+				font-size: 20px
+			.arrow-color
+				font-size: 30px
+				&:hover
+					color: #16a085
+					cursor:  pointer
+/* GALLERY */
+.gallery
+	background-color: #f5f6f7
+	.container
+		padding: 0 0 50px 0
+		display: table
+
+		.row
+			.community
+
+				i
+					color: $font-color-green
+				h2
+					color: $font-color-green
+				p
+					@include fontfortext
+			.gallery-arrow
+				.arrow-color
+					font-size: 40px
+					&:hover
+						color: #16a085
+						cursor:  pointer
+			.gallery-image-first
+				width: 300px
+				height: 300px
+				border-right: 10px solid #f5f6f7
+				background-image: ('')
+				background-size: cover
+				transition: background-image 500ms ease-in-out
+			.gallery-image-second
+				width: 300px
+				height: 300px
+				background-image: ('')
+				background-size: cover
+				border-left: 10px solid #f5f6f7
+				transition: background-image 500ms ease-in-out
+/*SUBSCRIBE*/
+
+.subscribe
+	background-image: url("https://images.pexels.com/photos/4641/iphone-smartphone-taking-photo-graffiti.jpg?w=1260&h=750&auto=compress&cs=tinysrgb")
+	background-size: cover
+	.container
+		height: 700px
+		.subscribe-email
+			padding-top: 200px
+			color: $font-color-w
+			.form-subscribe
+				input
+					height: 50px
+					font-size: 20px
+					padding: 5px
+					border: none
+					margin: -2px
+
+			.subscribe-btn
+				background-color: green
+				width: 50px
+				border: none
+				margin: -2px
+				background-color: #16a085
+				color: $font-color-w
+				&:hover
+					background-color: #007e5a
+/* DOWNLOAD */
+
+.download 
+	background-color: #f5f6f7
+	.container
+		.row
+			.download-it
+				padding: 0px 0px 40px 0
+				text-align: center
+				h2
+					padding: 50px 0px 20px 0
+				p
+					@include fontfortext
+		.download-apple
+			text-align: right
+			font-size: 25px
+			margin: 20px 0px
+			i
+				background-color: #007e5a
+				padding: 15px 20px
+				text-align: right
+			.btn-get
+				padding: 0px 0px 0px 20px
+		.download-play
+			font-size: 25px
+			margin: 20px 0px
+			i
+				background-color: #007e5a
+				padding: 15px 20px
+			.btn-get
+				padding: 0px 0px 0px 20px
+/*FOOTER */
+
+footer
+	.container
+		margin-top: 50px
+		.row
+			.copyright
+				font-weight: bold
+				a
+					color: #000
+					text-decoration: none
+					&:hover 
+						color: #007e5a
+			.footer-icons
+				text-align: right
+				i
+					color: #16a085
+
+/* LARGE TABLETS */
+
+@media (max-width: 992px) and (min-width: 769px)
+
+	/* HEADER */
+
+	header
+		.container
+			.row
+				.nav
+					ul
+						.icons-camera
+							position: absolute
+							text-align: center
+							margin-top: 80px
+							left: 0
+							right: 0
+
+	/* DESIGN */
+	.design 
+		.container 
+			.row
+				.col-lg-6
+					max-width: 40%
+					margin: 0 auto
+					.iphone
+						margin: 0 auto
+			.design-title
+				p
+					padding: 0
+				br
+					display: none
+	/*GALLERY*/
+	.gallery 
+		.container
+			padding-top: 50px
+			.row-down
+				display: table-footer-group
+				.gallery-arrow
+					text-align: center!important
+			.row-up
+				.gallery-image-first
+					border: none
+					margin: 0 auto
+				.gallery-image-second
+					border: none
+					margin: 0 auto
+/* TABLETS */
+
+@media (max-width: 768px) 
+
+	/* HEADER */
+
+	header
+		.container
+			.row
+				.nav
+					ul
+						li
+							width: 100%
+							text-align: center
+							border: 1px solid
+							background-color: rgba(255,255,255, 0.1)
+	/* SIMPLE PHOTO */
+
+	.simple-photo 
+		.container
+			z-index: 0
+			position: relative
+			display: block
+			&:after
+				position: absolute
+				content: ""
+				background: rgba(200,200,200,0.5)
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				z-index: -1
+			.simple-photo-text
+				text-align: center
+				margin: 0 auto
+
+	/* DESIGN */
+	.design 
+		overflow: visible
+		height: 800px
+		.container 
+			height: 1000px
+			.iphone
+				margin: 0 auto
+			.design-title
+				text-align: center
+				padding: 0
+				span
+					position: absolute
+					bottom: 650px
+				#js-changeColorNumber
+					left: 42%
+					font-size: 40px
+					font-weight: bold
+					color: $font-color-w
+				#js-changeColorArrowLeft
+					left: 22%
+					font-size: 60px
+					font-weight: bold
+					color: $font-color-w
+				#js-changeColorArrowRight
+					left: 70%
+					font-size: 60px
+					font-weight: bold
+					color: $font-color-w
+	#iphon-hidden
+		height: 950px
+		max-height: 1000px
+	/*GALLERY*/
+	.gallery 
+		.container
+			padding-top: 50px
+			.row-down
+				display: table-footer-group
+				.gallery-arrow
+					text-align: center!important
+			.row-up
+				.gallery-image-first
+					border: none
+					margin: 0 auto
+				.gallery-image-second
+					border: none
+					margin: 0 auto
+	/*DOWNLOAD*/
+
+	.download
+		.container
+			.row
+				.download-apple
+					text-align: center
+				.download-play
+					text-align: center
+
+/* SMARTPHON */	
+
+@media (max-width: 447px)
+
+	/* HEADER */
+
+	header
+		.container
+			.row
+				.yor-life
+					padding: 50px 0 50px 0
+				.nav
+					ul
+						li
+							width: 100%
+							text-align: center
+							border: 1px solid
+							background-color: rgba(255,255,255, 0.1)
+	
+	/* SIMPLE PHOTO */
+
+	.simple-photo 
+		.container
+			z-index: 0
+			position: relative
+			display: block
+			&:after
+				position: absolute
+				content: ""
+				background: rgba(200,200,200,0.5)
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				z-index: -1
+			.simple-photo-text
+				text-align: center
+				margin: 0 auto
+
+	/* DESIGN */
+	.design 
+		overflow: visible
+		height: 800px
+		.container 
+			height: 1000px
+			.iphone
+				margin: 0 auto
+			.design-title
+				text-align: center
+				h2
+					padding: 0px 0 10px 0px
+				p
+					padding: 0px 0 0px 0px
+				span
+					position: absolute
+					bottom: 650px
+				#js-changeColorNumber
+					left: 40%
+					font-size: 40px
+					font-weight: bold
+					color: $font-color-w
+				#js-changeColorArrowLeft
+					left: 20%
+					font-size: 60px
+					font-weight: bold
+					color: $font-color-w
+				#js-changeColorArrowRight
+					left: 70%
+					font-size: 60px
+					font-weight: bold
+					color: $font-color-w
+	#iphon-hidden
+		height: 950px
+		max-height: 1000px
+	/*GALLERY*/
+	.gallery 
+		.container
+			margin-top: 40px
+	/*DOWNLOAD*/
+
+	.download
+		.container
+			.row
+				.download-apple
+					text-align: center
+				.download-play
+					text-align: center
